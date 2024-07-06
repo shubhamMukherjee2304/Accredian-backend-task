@@ -33,7 +33,7 @@ app.post('/api/referrals', async (req, res) => {
     });
 
     const mailOptions = {
-      from: 'saddyshuii@gmail.com',
+      from: referrerEmail,
       to: friendEmail,
       subject: 'You have been referred!',
       text: `Hi ${friendName},\n\nYou have been referred by ${referrerName}.`,
